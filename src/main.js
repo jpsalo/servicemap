@@ -1,2 +1,2 @@
-require(['cs!app/app'], function() {
+require(['app/app'], function() {
 });

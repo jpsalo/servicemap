@@ -6,12 +6,12 @@ define (require) ->
     i18n                       = require 'i18next'
     URI                        = require 'URI'
 
-    settings                   = require 'cs!app/settings'
-    SMSpinner                  = require 'cs!app/spinner'
-    alphabet                   = require 'cs!app/alphabet'
-    accessibility              = require 'cs!app/accessibility'
-    {mixOf, pad, withDeferred} = require 'cs!app/base'
-    dataviz                    = require 'cs!app/data-visualization'
+    settings                   = require 'app/settings'
+    SMSpinner                  = require 'app/spinner'
+    alphabet                   = require 'app/alphabet'
+    accessibility              = require 'app/accessibility'
+    {mixOf, pad, withDeferred} = require 'app/base'
+    dataviz                    = require 'app/data-visualization'
 
     BACKEND_BASE = appSettings.service_map_backend
     LINKEDEVENTS_BASE = appSettings.linkedevents_backend

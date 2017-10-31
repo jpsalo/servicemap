@@ -1,6 +1,6 @@
 define (require) ->
-    dateformat = require 'cs!app/dateformat'
-    base       = require 'cs!app/views/base'
+    dateformat = require 'app/dateformat'
+    base       = require 'app/views/base'
 
     class EventDetailsView extends base.SMLayout
         id: 'event-view-container'

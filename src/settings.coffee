@@ -1,5 +1,5 @@
 define (require) ->
-    {getIeVersion} = require 'cs!app/base'
+    {getIeVersion} = require 'app/base'
 
     ieVersion = getIeVersion()
 

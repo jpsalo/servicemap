@@ -1,6 +1,6 @@
 define (require) ->
     i18n                   = require 'i18next'
-    {SMItemView, SMLayout} = require 'cs!app/views/base'
+    {SMItemView, SMLayout} = require 'app/views/base'
 
     class LoadingIndicatorView extends SMItemView
         className: 'loading-indicator'

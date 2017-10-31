@@ -1,9 +1,9 @@
 define (require) ->
     _            = require 'underscore'
 
-    models       = require 'cs!app/models'
-    base         = require 'cs!app/views/base'
-    {getLangURL} = require 'cs!app/base'
+    models       = require 'app/models'
+    base         = require 'app/views/base'
+    {getLangURL} = require 'app/base'
 
     class LanguageSelectorView extends base.SMItemView
         template: 'language-selector'

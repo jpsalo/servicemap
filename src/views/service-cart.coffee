@@ -1,8 +1,8 @@
 define (require) ->
     _       = require 'underscore'
 
-    p13n    = require 'cs!app/p13n'
-    base    = require 'cs!app/views/base'
+    p13n    = require 'app/p13n'
+    base    = require 'app/views/base'
 
     class ServiceCartView extends base.SMItemView
         template: 'service-cart'

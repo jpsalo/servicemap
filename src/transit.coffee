@@ -1,7 +1,7 @@
 define (require) ->
     Backbone  = require 'backbone'
     L         = require 'leaflet'
-    graphUtil = require 'cs!app/util/graphql'
+    graphUtil = require 'app/util/graphql'
 
     # General functions taken from https://github.com/HSLdevcom/navigator-proto
 

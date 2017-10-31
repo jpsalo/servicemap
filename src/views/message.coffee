@@ -1,5 +1,5 @@
 define (require) ->
-    {SMLayout} = require 'cs!app/views/base'
+    {SMLayout} = require 'app/views/base'
 
     class MessageLayout extends SMLayout
         # used to render a message or hint in the navigation region (sidebar)

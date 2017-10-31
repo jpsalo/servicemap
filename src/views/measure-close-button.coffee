@@ -1,7 +1,7 @@
 define (require) ->
     i18n = require 'i18next'
 
-    base = require 'cs!app/views/base'
+    base = require 'app/views/base'
 
     class MeasureCloseButtonView extends base.SMLayout
         template: 'measure-close-button'

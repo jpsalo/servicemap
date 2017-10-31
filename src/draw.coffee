@@ -1,8 +1,8 @@
 define (require) ->
     _              = require 'underscore'
 
-    p13n           = require 'cs!app/p13n'
-    {getIeVersion} = require 'cs!app/base'
+    p13n           = require 'app/p13n'
+    {getIeVersion} = require 'app/base'
 
     # Define colors for berries by background-layer
     COLORS =

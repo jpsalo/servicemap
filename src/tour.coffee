@@ -2,8 +2,8 @@ define (require) ->
     _bst   = require 'bootstrap-tour'
     {t}    = require 'i18next'
 
-    jade   = require 'cs!app/jade'
-    models = require 'cs!app/models'
+    jade   = require 'app/jade'
+    models = require 'app/models'
 
     # TODO: vary by municipality
     unit = new models.Unit id:8215

@@ -3,8 +3,8 @@ define (require) ->
     $          = require 'jquery'
     i18n       = require 'i18next'
 
-    p13n       = require 'cs!app/p13n'
-    dateformat = require 'cs!app/dateformat'
+    p13n       = require 'app/p13n'
+    dateformat = require 'app/dateformat'
 
     # Make sure jade runtime is loaded
     if typeof jade != 'object'

@@ -1,7 +1,7 @@
 define (require) ->
     backbone = require 'backbone'
     _ = require 'underscore'
-    b = require 'cs!app/views/base'
+    b = require 'app/views/base'
 
     class ResourceItemView extends b.SMItemView
         template: 'resource-item'

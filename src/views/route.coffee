@@ -3,12 +3,12 @@ define (require) ->
     moment                 = require 'moment'
     i18n                   = require 'i18next'
 
-    p13n                   = require 'cs!app/p13n'
-    models                 = require 'cs!app/models'
-    SMSpinner              = require 'cs!app/spinner'
-    base                   = require 'cs!app/views/base'
-    RouteSettingsView      = require 'cs!app/views/route-settings'
-    {LoadingIndicatorView} = require 'cs!app/views/loading-indicator'
+    p13n                   = require 'app/p13n'
+    models                 = require 'app/models'
+    SMSpinner              = require 'app/spinner'
+    base                   = require 'app/views/base'
+    RouteSettingsView      = require 'app/views/route-settings'
+    {LoadingIndicatorView} = require 'app/views/loading-indicator'
 
     class RouteView extends base.SMLayout
         id: 'route-view-container'

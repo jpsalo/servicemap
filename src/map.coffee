@@ -3,8 +3,8 @@ define (require) ->
     p4j     = require 'proj4leaflet'
     _       = require 'underscore'
 
-    sm      = require 'cs!app/base'
-    dataviz = require 'cs!app/data-visualization'
+    sm      = require 'app/base'
+    dataviz = require 'app/data-visualization'
 
     RETINA_MODE = window.devicePixelRatio > 1
 

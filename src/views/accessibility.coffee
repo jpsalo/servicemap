@@ -4,10 +4,10 @@ define (require) ->
     moment                 = require 'moment'
     { Model }              = require 'backbone'
 
-    accessibility          = require 'cs!app/accessibility'
-    accessibilitySentences = require 'cs!app/accessibility-sentences'
-    p13n                   = require 'cs!app/p13n'
-    base                   = require 'cs!app/views/base'
+    accessibility          = require 'app/accessibility'
+    accessibilitySentences = require 'app/accessibility-sentences'
+    p13n                   = require 'app/p13n'
+    base                   = require 'app/views/base'
 
     class AccessibilityViewpointView extends base.SMItemView
         template: 'accessibility-viewpoint-summary'

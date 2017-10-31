@@ -1,8 +1,8 @@
 define (require) ->
     _                      = require 'underscore'
 
-    widgets                = require 'cs!app/widgets'
-    MeasureCloseButtonView = require 'cs!app/views/measure-close-button'
+    widgets                = require 'app/widgets'
+    MeasureCloseButtonView = require 'app/views/measure-close-button'
 
     class MeasureTool
         constructor: (@map) ->

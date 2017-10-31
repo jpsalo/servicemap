@@ -3,10 +3,10 @@ define (require) ->
     leafletImage   = require 'leaflet-image'
     leafletImageIe = require 'leaflet-image-ie'
 
-    jade           = require 'cs!app/jade'
-    p13n           = require 'cs!app/p13n'
-    sm             = require 'cs!app/base'
-    draw           = require 'cs!app/draw'
+    jade           = require 'app/jade'
+    p13n           = require 'app/p13n'
+    sm             = require 'app/base'
+    draw           = require 'app/draw'
 
     MAP_IMG_ELEMENT_ID = 'map-as-png'
 

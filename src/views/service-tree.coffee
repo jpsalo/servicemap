@@ -2,8 +2,8 @@ define (require) ->
     _      = require 'underscore'
     i18n   = require 'i18next'
 
-    models = require 'cs!app/models'
-    base   = require 'cs!app/views/base'
+    models = require 'app/models'
+    base   = require 'app/views/base'
 
     class ServiceTreeView extends base.SMLayout
         id: 'service-tree-container'

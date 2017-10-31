@@ -81,7 +81,7 @@ require.config({
     },
   },
   config: {
-    'cs!app/p13n': {
+    'app/p13n': {
       localStorageEnabled: true
     }
   },

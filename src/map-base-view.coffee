@@ -6,12 +6,12 @@ define (require) ->
     markercluster    = require 'leaflet.markercluster'
     leaflet_snogylop = require 'leaflet.snogylop'
 
-    map              = require 'cs!app/map'
-    widgets          = require 'cs!app/widgets'
-    jade             = require 'cs!app/jade'
-    MapStateModel    = require 'cs!app/map-state-model'
-    dataviz          = require 'cs!app/data-visualization'
-    {getIeVersion}   = require 'cs!app/base'
+    map              = require 'app/map'
+    widgets          = require 'app/widgets'
+    jade             = require 'app/jade'
+    MapStateModel    = require 'app/map-state-model'
+    dataviz          = require 'app/data-visualization'
+    {getIeVersion}   = require 'app/base'
 
     # TODO: remove duplicates
     MARKER_POINT_VARIANT = false

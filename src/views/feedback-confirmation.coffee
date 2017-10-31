@@ -1,5 +1,5 @@
 define (require) ->
-    base = require 'cs!app/views/base'
+    base = require 'app/views/base'
 
     class FeedbackConfirmationView extends base.SMItemView
         template: 'feedback-confirmation'

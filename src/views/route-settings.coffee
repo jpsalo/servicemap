@@ -3,13 +3,13 @@ define (require) ->
     moment             = require 'moment'
     datetimepicker     = require 'bootstrap-datetimepicker'
 
-    p13n               = require 'cs!app/p13n'
-    models             = require 'cs!app/models'
-    search             = require 'cs!app/search'
-    base               = require 'cs!app/views/base'
-    accessibilityViews = require 'cs!app/views/accessibility'
-    geocoding          = require 'cs!app/geocoding'
-    jade               = require 'cs!app/jade'
+    p13n               = require 'app/p13n'
+    models             = require 'app/models'
+    search             = require 'app/search'
+    base               = require 'app/views/base'
+    accessibilityViews = require 'app/views/accessibility'
+    geocoding          = require 'app/geocoding'
+    jade               = require 'app/jade'
 
     class RouteSettingsView extends base.SMLayout
         template: 'route-settings'

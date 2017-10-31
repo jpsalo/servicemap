@@ -4,13 +4,13 @@ define (require) ->
     URI        = require 'URI'
     Raven      = require 'raven'
 
-    sm         = require 'cs!app/base'
-    Models     = require 'cs!app/models'
-    Analytics  = require 'cs!app/analytics'
+    sm         = require 'app/base'
+    Models     = require 'app/models'
+    Analytics  = require 'app/analytics'
 
-    renderUnitsByOldServiceId = require 'cs!app/redirect'
+    renderUnitsByOldServiceId = require 'app/redirect'
 
-    GeocodeCleanup = require 'cs!app/geocode-cleanup'
+    GeocodeCleanup = require 'app/geocode-cleanup'
 
     PAGE_SIZE = appSettings.page_size
 

@@ -2,7 +2,7 @@ define (require) ->
     Marionette  = require 'backbone.marionette'
     URI         = require 'URI'
 
-    CancelToken = require 'cs!app/cancel-token'
+    CancelToken = require 'app/cancel-token'
 
     class BaseRouter extends Backbone.Marionette.AppRouter
         initialize: (options) ->

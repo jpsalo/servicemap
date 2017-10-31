@@ -1,5 +1,5 @@
 define (require) ->
-    sm     = require 'cs!app/base'
+    sm     = require 'app/base'
     $      = require 'jquery'
     URI    = require 'URI'
     Raven  = require 'raven'

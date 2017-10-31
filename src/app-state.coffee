@@ -1,7 +1,7 @@
 define (require) ->
     Backbone                = require 'backbone'
-    models                  = require 'cs!app/models'
-    transit                 = require 'cs!app/transit'
+    models                  = require 'app/models'
+    transit                 = require 'app/transit'
 
     class AppState
         constructor: ->

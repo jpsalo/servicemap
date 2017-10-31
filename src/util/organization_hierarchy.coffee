@@ -1,5 +1,5 @@
 define (require) ->
-    { Department } = require 'cs!app/models'
+    { Department } = require 'app/models'
 
     generateDepartmentDescription: (department) ->
         rootDepartment = department.get('hierarchy')[0]  # city

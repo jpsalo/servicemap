@@ -1,8 +1,8 @@
 define (require) ->
-    MapView        = require 'cs!app/map-view'
-    base           = require 'cs!app/views/base'
-    RouteView      = require 'cs!app/views/route'
-    {getIeVersion} = require 'cs!app/base'
+    MapView        = require 'app/map-view'
+    base           = require 'app/views/base'
+    RouteView      = require 'app/views/route'
+    {getIeVersion} = require 'app/base'
 
     class DetailsView extends base.SMLayout
         id: 'details-view-container'

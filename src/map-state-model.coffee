@@ -2,7 +2,7 @@ define (require) ->
     L          = require 'leaflet'
     Backbone   = require 'backbone'
 
-    {MapUtils} = require 'cs!app/map'
+    {MapUtils} = require 'app/map'
 
     VIEWPOINTS =
         # meters to show everything within in every direction

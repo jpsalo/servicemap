@@ -1,8 +1,8 @@
 define (require) ->
-    p13n                             = require 'cs!app/p13n'
-    base                             = require 'cs!app/views/base'
-    AccessibilityPersonalisationView = require 'cs!app/views/accessibility-personalisation'
-    {getLangURL}                     = require 'cs!app/base'
+    p13n                             = require 'app/p13n'
+    base                             = require 'app/views/base'
+    AccessibilityPersonalisationView = require 'app/views/accessibility-personalisation'
+    {getLangURL}                     = require 'app/base'
 
     class PersonalisationView extends base.SMLayout
         className: 'personalisation-container'

@@ -2,11 +2,11 @@ define (require) ->
     _typeahead = require 'typeahead.bundle'
     Backbone   = require 'backbone'
 
-    sm         = require 'cs!app/base'
-    p13n       = require 'cs!app/p13n'
-    settings   = require 'cs!app/settings'
-    jade       = require 'cs!app/jade'
-    models     = require 'cs!app/models'
+    sm         = require 'app/base'
+    p13n       = require 'app/p13n'
+    settings   = require 'app/settings'
+    jade       = require 'app/jade'
+    models     = require 'app/models'
 
     monkeyPatchTypeahead = ($element) =>
         typeahead = $element.data 'ttTypeahead'

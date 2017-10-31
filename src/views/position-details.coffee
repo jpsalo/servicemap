@@ -4,12 +4,12 @@ define (require) ->
     Backbone       = require 'backbone'
     moment         = require 'moment'
 
-    models         = require 'cs!app/models'
-    MapView        = require 'cs!app/map-view'
-    base           = require 'cs!app/views/base'
-    RouteView      = require 'cs!app/views/route'
-    DetailsView    = require 'cs!app/views/details'
-    {getIeVersion} = require 'cs!app/base'
+    models         = require 'app/models'
+    MapView        = require 'app/map-view'
+    base           = require 'app/views/base'
+    RouteView      = require 'app/views/route'
+    DetailsView    = require 'app/views/details'
+    {getIeVersion} = require 'app/base'
 
     UNIT_INCLUDE_FIELDS = 'name,root_ontologytreenodes,location,street_address'
     SORTED_DIVISIONS = [

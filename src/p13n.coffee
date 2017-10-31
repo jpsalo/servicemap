@@ -12,8 +12,8 @@ define (require) ->
     _sv      = require 'moment/sv'
     _gb      = require 'moment/en-gb'
 
-    models   = require 'cs!app/models'
-    dataviz  = require 'cs!app/data-visualization'
+    models   = require 'app/models'
+    dataviz  = require 'app/data-visualization'
 
     makeMomentLang = (lang) ->
         if lang == 'en'

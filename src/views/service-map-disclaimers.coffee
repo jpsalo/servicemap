@@ -1,9 +1,9 @@
 define (require) ->
     {t}                 = require 'i18next'
 
-    {SMItemView}        = require 'cs!app/views/base'
-    tour                = require 'cs!app/tour'
-    TourStartButtonView = require 'cs!app/views/feature-tour-start'
+    {SMItemView}        = require 'app/views/base'
+    tour                = require 'app/tour'
+    TourStartButtonView = require 'app/views/feature-tour-start'
 
     ServiceMapDisclaimersView: class ServiceMapDisclaimersView extends SMItemView
         template: 'description-of-service'

@@ -1,6 +1,6 @@
 define (require) ->
-    base = require 'cs!app/views/base'
-    tour = require 'cs!app/tour'
+    base = require 'app/views/base'
+    tour = require 'app/tour'
 
     class TourStartButton extends base.SMItemView
         className: 'feature-tour-start'

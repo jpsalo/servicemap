@@ -1,5 +1,5 @@
 define (require) ->
-    base = require 'cs!app/views/base'
+    base = require 'app/views/base'
 
     class AccessibilityPersonalisationView extends base.SMItemView
         className: 'accessibility-personalisation'

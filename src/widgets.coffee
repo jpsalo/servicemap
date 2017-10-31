@@ -5,8 +5,8 @@ define (require) ->
     $             = require 'jquery'
     Backbone      = require 'backbone'
 
-    draw          = require 'cs!app/draw'
-    jade          = require 'cs!app/jade'
+    draw          = require 'app/draw'
+    jade          = require 'app/jade'
 
     anchor = (size) ->
         x = size.x/3 + 5

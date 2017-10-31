@@ -1,7 +1,7 @@
 define (require) ->
     URI   = require 'URI'
 
-    models = require 'cs!app/models'
+    models = require 'app/models'
 
     modelsToSelectionType = (appModels) =>
         { selectedUnits, selectedServices, searchResults, units } = appModels

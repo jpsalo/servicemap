@@ -2,10 +2,10 @@ define (require) ->
     _                  = require 'underscore'
     i18n               = require 'i18next'
 
-    models             = require 'cs!app/models'
-    base               = require 'cs!app/views/base'
-    RadiusControlsView = require 'cs!app/views/radius'
-    SMSpinner          = require 'cs!app/spinner'
+    models             = require 'app/models'
+    base               = require 'app/views/base'
+    RadiusControlsView = require 'app/views/radius'
+    SMSpinner          = require 'app/spinner'
 
     RESULT_TYPES =
         unit: models.UnitList

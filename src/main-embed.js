@@ -1,2 +1,2 @@
-require(['cs!app/embed'], function() {
+require(['app/embed'], function() {
 });

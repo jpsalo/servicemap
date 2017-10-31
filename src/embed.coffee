@@ -7,16 +7,16 @@ define (require) ->
     URI          = require 'URI'
     Bootstrap    = require 'bootstrap'
 
-    Router       = require 'cs!app/router'
-    BaseControl  = require 'cs!app/control'
-    TitleBarView = require 'cs!app/embedded-views'
-    widgets      = require 'cs!app/widgets'
-    models       = require 'cs!app/models'
-    p13n         = require 'cs!app/p13n'
-    ColorMatcher = require 'cs!app/color'
-    BaseMapView  = require 'cs!app/map-base-view'
-    map          = require 'cs!app/map'
-    TitleView    = require 'cs!app/views/embedded-title'
+    Router       = require 'app/router'
+    BaseControl  = require 'app/control'
+    TitleBarView = require 'app/embedded-views'
+    widgets      = require 'app/widgets'
+    models       = require 'app/models'
+    p13n         = require 'app/p13n'
+    ColorMatcher = require 'app/color'
+    BaseMapView  = require 'app/map-base-view'
+    map          = require 'app/map'
+    TitleView    = require 'app/views/embedded-title'
 
     PAGE_SIZE = 1000
 

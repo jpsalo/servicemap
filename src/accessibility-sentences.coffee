@@ -6,7 +6,7 @@ define (require) ->
     Raven    = require 'raven'
     Backbone = require 'backbone'
 
-    models   = require 'cs!app/models'
+    models   = require 'app/models'
 
     BASE_URL = 'https://api.hel.fi/palvelukarttaws/rest/v3/unit/'
     LANGUAGES = ['fi', 'sv', 'en']

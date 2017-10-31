@@ -1,7 +1,7 @@
 define (require) ->
-    p13n = require 'cs!app/p13n'
-    jade = require 'cs!app/jade'
-    base = require 'cs!app/views/base'
+    p13n = require 'app/p13n'
+    jade = require 'app/jade'
+    base = require 'app/views/base'
 
     class TitleView extends base.SMItemView
         template: 'title-view'
