@@ -19,7 +19,7 @@ define(function(require) {
     const {SidebarLoadingIndicatorView}          = require('app/views/loading-indicator');
     const {SearchLayoutView, UnitListLayoutView} = require('app/views/search-results');
     const {InformationalMessageView}             = require('app/views/message');
-    const {SearchResultsSummaryLayout, UnitListingView} = require('app/views/new-search-results.coffee');
+    const {SearchResultsSummaryLayout, UnitListingView} = require('app/views/new-search-results');
 
     class NavigationLayout extends base.SMLayout {
         constructor(...args) {
@@ -386,7 +386,7 @@ define(function(require) {
                 search: '#search-region',
                 browse: '#browse-region'
             };
-    
+
             this.prototype.events = {
                 'click .header': 'open',
                 'keypress .header': 'toggleOnKeypress',

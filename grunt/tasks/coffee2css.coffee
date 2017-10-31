@@ -20,7 +20,7 @@ module.exports = (grunt) ->
   requirejs.config config
 
   grunt.registerMultiTask 'coffee2css', 'Generate css classes from colors in a coffeescript file.', ->
-    ColorMatcher = requirejs 'cs!app/color'
+    ColorMatcher = requirejs 'app/color'
     grunt.log.writeln "Generating CSS for service colors."
     options = @options()
     cssOutput = ''
