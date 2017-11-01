@@ -46,6 +46,7 @@ define(function(require) {
 
     class MapView extends mixOf(MapBaseView, TransitMapMixin) {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -53,19 +54,20 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
-            this.preAdapt = this.preAdapt.bind(this);
+            */
             super(...args);
+            this.preAdapt = this.preAdapt.bind(this);
         }
 
         static initClass() {
             this.prototype.tagName = 'div';
-    
+
             this.mapActiveAreaMaxHeight = () => {
                 const screenWidth = $(window).innerWidth();
                 const screenHeight = $(window).innerHeight();
                 return Math.min(screenWidth * 0.4, screenHeight * 0.3);
             };
-    
+
             this.setMapActiveAreaMaxHeight = options => {
                 // Sets the height of the map shown in views that have a slice of
                 // map visible on mobile.

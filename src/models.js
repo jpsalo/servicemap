@@ -194,6 +194,7 @@ define(function(require) {
 
     class SMCollection extends RESTFrameworkCollection {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -201,9 +202,10 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.getComparator = this.getComparator.bind(this);
             this.comparatorWrapper = this.comparatorWrapper.bind(this);
-            super(...args);
         }
 
         initialize(models, options) {

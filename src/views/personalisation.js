@@ -18,6 +18,7 @@ define(function(require) {
     return PersonalisationView = (function() {
         PersonalisationView = class PersonalisationView extends base.SMLayout {
             constructor(...args) {
+              /*
                 {
                   // Hack: trick Babel/TypeScript into allowing this before super.
                   if (false) { super(); }
@@ -25,9 +26,10 @@ define(function(require) {
                   let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
                   eval(`${thisName} = this;`);
                 }
+                */
+                super(...args);
                 this.switchPersonalisation = this.switchPersonalisation.bind(this);
                 this.setMaxHeight = this.setMaxHeight.bind(this);
-                super(...args);
             }
 
             static initClass() {
@@ -35,7 +37,7 @@ define(function(require) {
                 this.prototype.template = 'personalisation';
                 this.prototype.regions =
                     {accessibility: '#accessibility-personalisation'};
-    
+
                 this.prototype.personalisationIcons = {
                     'city': [
                         'helsinki',

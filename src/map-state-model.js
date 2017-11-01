@@ -34,6 +34,7 @@ define(function(require) {
     return (MapStateModel = class MapStateModel extends Backbone.Model {
         // Models map center, bounds and zoom in a unified way.
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -41,8 +42,9 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
-            this.onSelectPosition = this.onSelectPosition.bind(this);
+            */
             super(...args);
+            this.onSelectPosition = this.onSelectPosition.bind(this);
         }
 
         initialize(opts, embedded) {

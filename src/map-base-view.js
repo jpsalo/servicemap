@@ -43,6 +43,7 @@ define(function(require) {
 
     class MapBaseView extends Backbone.Marionette.View {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -50,9 +51,10 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.fitBbox = this.fitBbox.bind(this);
             this.drawInitialState = this.drawInitialState.bind(this);
-            super(...args);
         }
 
         static initClass() {
@@ -62,7 +64,7 @@ define(function(require) {
                 L.latLng([58, 21]),
                 L.latLng([58, 32])
             ];
-    
+
             this.prototype.mapOptions = {};
         }
         getIconSize() {

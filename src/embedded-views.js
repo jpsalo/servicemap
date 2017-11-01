@@ -59,6 +59,7 @@ define(function(require) {
 
     class TitleBarView extends baseviews.SMItemView {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -66,8 +67,9 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
-            this.divisionNames = this.divisionNames.bind(this);
+            */
             super(...args);
+            this.divisionNames = this.divisionNames.bind(this);
         }
 
         static initClass() {

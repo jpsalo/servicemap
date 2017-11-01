@@ -315,6 +315,7 @@ define(function(require) {
     UnitListingView.initClass();
     class SearchResultsSummaryLayout extends base.SMLayout {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -322,8 +323,9 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
-            this.onScroll = this.onScroll.bind(this);
+            */
             super(...args);
+            this.onScroll = this.onScroll.bind(this);
         }
 
         static initClass() {

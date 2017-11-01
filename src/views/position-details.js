@@ -65,6 +65,7 @@ define(function(require) {
             return this.trigger('ready');
         }
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -72,9 +73,10 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...Array.from(args || []));
             _.extend(this.events, DetailsView.prototype.events);
             _.extend(this.regions, DetailsView.prototype.regions);
-            super(...Array.from(args || []));
         }
         initialize(options) {
             this.ready = false;
@@ -247,6 +249,7 @@ define(function(require) {
 
     class DivisionListItemView extends base.SMItemView {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -254,9 +257,10 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.handleClick = this.handleClick.bind(this);
             this.initialize = this.initialize.bind(this);
-            super(...args);
         }
 
         static initClass() {
@@ -285,6 +289,7 @@ define(function(require) {
 
     class EmergencyUnitLayout extends base.SMLayout {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -292,8 +297,9 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
-            this.initialize = this.initialize.bind(this);
+            */
             super(...args);
+            this.initialize = this.initialize.bind(this);
         }
 
         static initClass() {
@@ -341,6 +347,7 @@ define(function(require) {
 
     class UnitListItemView extends base.SMItemView {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -348,9 +355,10 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.handleInnerClick = this.handleInnerClick.bind(this);
             this.handleClick = this.handleClick.bind(this);
-            super(...args);
         }
 
         static initClass() {

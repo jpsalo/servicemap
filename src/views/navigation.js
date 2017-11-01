@@ -23,6 +23,7 @@ define(function(require) {
 
     class NavigationLayout extends base.SMLayout {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -30,9 +31,10 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.updateMaxHeights = this.updateMaxHeights.bind(this);
             this.setMaxHeight = this.setMaxHeight.bind(this);
-            super(...args);
         }
 
         static initClass() {

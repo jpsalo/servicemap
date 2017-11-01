@@ -64,6 +64,7 @@ define(function(require) {
             };
         }
         constructor(size, rotation) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -71,6 +72,8 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.size = size;
             this.rotation = rotation;
             this.ratio = this.size / this.referenceLength;
@@ -118,6 +121,7 @@ define(function(require) {
             };
         }
         constructor(size, point, color) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -125,6 +129,8 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.size = size;
             this.point = point;
             this.color = color;
@@ -158,6 +164,7 @@ define(function(require) {
         constructor(size, color, id,
                       rotation,
                       translation) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -165,6 +172,8 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.size = size;
             this.color = color;
             if (rotation == null) { rotation = 70 + (id % 40); }
@@ -193,6 +202,7 @@ define(function(require) {
 
     class PointCluster extends CanvasDrawer {
         constructor(size, colors, positions, radius) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -200,6 +210,8 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...args);
             this.draw = this.draw.bind(this);
             this.size = size;
             this.colors = colors;
@@ -215,6 +227,7 @@ define(function(require) {
 
     class PointPlant extends CanvasDrawer {
         constructor(size, color, radius) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -222,6 +235,8 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+          */
+            super(...args);
             this.draw = this.draw.bind(this);
             this.size = size;
             this.color = color;

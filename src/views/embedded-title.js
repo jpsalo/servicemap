@@ -16,6 +16,7 @@ define(function(require) {
     return TitleView = (function() {
         TitleView = class TitleView extends base.SMItemView {
             constructor(...args) {
+              /*
                 {
                   // Hack: trick Babel/TypeScript into allowing this before super.
                   if (false) { super(); }
@@ -23,8 +24,9 @@ define(function(require) {
                   let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
                   eval(`${thisName} = this;`);
                 }
-                this.render = this.render.bind(this);
+                */
                 super(...args);
+                this.render = this.render.bind(this);
             }
 
             static initClass() {

@@ -53,6 +53,7 @@ define(function(require) {
             this.prototype.type = 'details';
         }
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -60,11 +61,12 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
+            */
+            super(...Array.from(args || []));
             this._drawMarkerCanvas = this._drawMarkerCanvas.bind(this);
             this.updateEventsUi = this.updateEventsUi.bind(this);
             _.extend(this.events, DetailsView.prototype.events);
             _.extend(this.regions, DetailsView.prototype.regions);
-            super(...Array.from(args || []));
         }
         initialize(options) {
             super.initialize(options);

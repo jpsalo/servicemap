@@ -18,6 +18,7 @@ define(function(require) {
         let SUPPORTED_ANIMATIONS = undefined;
         SidebarRegion = class SidebarRegion extends Marionette.Region {
             constructor(...args) {
+              /*
                 {
                   // Hack: trick Babel/TypeScript into allowing this before super.
                   if (false) { super(); }
@@ -25,13 +26,14 @@ define(function(require) {
                   let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
                   eval(`${thisName} = this;`);
                 }
+                */
+                super(...args);
                 this._trigger = this._trigger.bind(this);
                 this.show = this.show.bind(this);
-                super(...args);
             }
 
             static initClass() {
-    
+
                 SUPPORTED_ANIMATIONS = ['left', 'right'];
             }
 

@@ -115,6 +115,7 @@ define(function(require) {
 
     class TransportModeControlsView extends base.SMItemView {
         constructor(...args) {
+          /*
             {
               // Hack: trick Babel/TypeScript into allowing this before super.
               if (false) { super(); }
@@ -122,8 +123,9 @@ define(function(require) {
               let thisName = thisFn.slice(thisFn.indexOf('{') + 1, thisFn.indexOf(';')).trim();
               eval(`${thisName} = this;`);
             }
-            this.onDomRefresh = this.onDomRefresh.bind(this);
+            */
             super(...args);
+            this.onDomRefresh = this.onDomRefresh.bind(this);
         }
 
         static initClass() {
